@@ -15,7 +15,7 @@ Este es el backend de una aplicación de calendario virtual hecho en React con e
 
 Para ejecutar este proyecto, deberá agregar las siguientes variables de entorno a su archivo .env
 
-`PORT`: El puerto donde correra el servidor
+`PORT`: El puerto donde correrá el servidor
 
 `DB_CNN`: la conexión a la base de datos hecha en MongoDB
 
