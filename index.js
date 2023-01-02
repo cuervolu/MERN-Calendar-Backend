@@ -1,7 +1,6 @@
 const express = require('express'); 
 const { dbConnection } = require('./database/config');
 const cors = require('cors');
-const path = require('path'); 
 require('dotenv').config();
 
 //Crear el servidor de express
@@ -23,11 +22,7 @@ app.use(express.json());
 app.use('/api/auth',require('./routes/auth'));
 app.use('/api/events',require('./routes/events'));
 
-app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/*', (req, res) => {
-    res.sendFile(__dirname, 'public', 'index.html');
-})
 
 
 //Escuchar peticiones
