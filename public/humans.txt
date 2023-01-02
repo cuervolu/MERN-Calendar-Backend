@@ -1,0 +1,34 @@
+/* humanstxt.org */
+The humans responsible & technology colophon
+
+/* PROJECT */
+
+	Site Name: CalendarApp
+	Site URL: cuervolu.github.io/calendar/
+	Created: 2023/01/01 
+	Web Design: Angel Cuervo
+    Contact: cuervolu [at] protonmail.com
+
+/* SITE */
+	Last update: 2022/12/25
+	Language: Spanish
+	Doctype: HTML5
+	Standards: HTML5, CSS3, Javascript
+	Software: Visual Studio Code, Git
+
+/* AUTHOR */
+
+	Name: Ángel Cuervo
+	Nickname: Cuervolu
+	Title: IT Student
+	Location: Chile
+
+/* SOCIAL */
+
+	Twitter: https://twitter.com/cuervolu29
+	Instagram: https://www.instagram.com/cuervolu/
+
+/* TECHNOLOGY */
+
+	Built with: React, Redux, Vite, HTML, CSS, Javascript, MongoDB, Express, Node.js, React-Router-Dom
+    Plugins: React-Bootstrap, date-fns, sweetalert2, animate.css, React-Datepicker, React-Modal, React-Spinners
