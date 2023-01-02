@@ -22,8 +22,10 @@ router.post(
     '/',
     [
         check('title', 'El título es obligatorio').not().isEmpty(),
-        check('start', 'Fecha de inicio es obligatoria').isDate(),
-        check('end', 'Fecha de finalización es obligatoria').isDate(),
+        check('start', 'Fecha de inicio es obligatoria').isISO8601().toDate(),
+        check('end', 'Fecha de finalización es obligatoria').isISO8601().toDate(),
+        check('end').isISO8601().toDate().custom(( end, { req } ) => end >= req.body.start ).withMessage
+        ('Fechas invalidas'),
         fieldsValidator
     ],
     createEvent);
@@ -33,8 +35,9 @@ router.put(
     '/:id',
     [
         check('title', 'El título es obligatorio').not().isEmpty(),
-        check('start', 'Fecha de inicio es obligatoria').isDate(),
-        check('end', 'Fecha de finalización es obligatoria').isDate(),
+        check('start', 'Fecha de inicio es obligatoria').isISO8601().toDate(),
+        check('end', 'Fecha de finalización es obligatoria').isISO8601().toDate(),
+        check('end').isISO8601().toDate().custom(( end, { req } ) => end >= req.body.start ).withMessage('Fechas invalidas'),
         fieldsValidator
     ],
     updateEvent);
